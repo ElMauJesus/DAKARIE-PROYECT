@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario | Dakarie Marketplace</title> 
+    <link rel="stylesheet" href="../styles/usuario.css">
+    <link rel="stylesheet" href="../styles/modo.css">
+    <!------------------------------------------------------------------> 
+    <link rel="stylesheet" href="options/styles/informacion.css">
+    <link rel="stylesheet" href="options/styles/compras.css">
+    <link rel="stylesheet" href="options/styles/ventas.css">
+    <link rel="stylesheet" href="options/styles/finanzas.css">
+    <link rel="stylesheet" href="options/styles/seguridad.css">
+    <link rel="stylesheet" href="options/styles/administracion.css">
+    <!------------------------------------------------------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        // Comprobamos la preferencia inmediatamente antes de que cargue la página visualmente
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark-mode");
+        }
+    </script> 
+    <!--iframe src="menu_messages.html"></iframe-->
+    <!-- ---------- ---------- HEADER ---------- ---------- -->
+    <header class="header">
+        <!-- ---------- ---------- NAVBAR ---------- ---------- --> 
+        <nav class="nav__var">
+            <ul class="nav__var--container">
+                <div class="card item0">
+                    <h1>DAKARIE</h1>
+                </div>
+                <ol class="nav__var--item item1">
+                    <a href="../index.html">Home</a>
+                </ol>
+                <ol class="nav__var--item item2">
+                    <a href="../categorias.html">Categorias</a>
+                </ol>
+                <ol class="nav__var--item item3">
+                    <a href="../tiendas.html">
+                        Tiendas
+                    </a>
+                </ol>
+                <ol class="nav__var--item item4">
+                    <a href="../ofertas.html">Ofertas</a>
+                </ol>
+                <ol class="nav__var--item item5">
+                    <button></button>
+                </ol>
+                <ol class="nav__var--item item6">
+                    <button></button>
+                </ol>
+                <ol class="nav__var--item item7">
+                    <div>
+                        <button id="hamburgerBtn" class="hamburger">☰</button>
+                    </div>
+                </ol>
+            </ul>
+        </nav>
+
+        <!-- ---------- ---------- SIDEMENU ---------- ---------- --> 
+        <div id="sideMenu" class="side-menu">
+            
+            <ul>
+                <div class="side-menu--container">
+                    <div class="divUsuario"> </div>
+                    <div class="side-menu--element">
+                        <p class="side-menu--item1">User Name</p>
+                        <p class="side-menu--item2">@UserID</p>
+                        <button>Cerrar Sesion</button>
+                    </div>
+                </div>
+                <li><a href="../index.html">
+                    <div class="side-menu--options options1">
+                        <p>Home</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div1">
+                        </div>
+                        <p>Mi Cuenta</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div2"> </div>
+                        <p>Billetera</p>
+                    </div>
+                </a></li>
+                <hr>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div3"> </div>
+                        <p>Mensajes</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div4"> </div>
+                        <p>Carrito</p>
+                    </div>
+                </a></li>
+                <li><a href="../categorias.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div5"> </div>
+                        <p>Categorias</p>
+                    </div>
+                </a></li>
+                <li><a href="../tiendas.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div6"> </div>
+                        <p>Tiendas</p>
+                    </div>
+                </a></li>
+                <li><a href="../ofertas.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div7"> </div>
+                        <p>Ofertas</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div8"> </div>
+                        <p>Favoritos</p>
+                    </div>
+                </a></li>
+                <li><a href="../soporte.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div9"> </div>
+                        <p>Soporte</p>
+                    </div>
+                </a></li>
+                <li><a href="../memberships.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div10"> </div>
+                        <p>Membresias</p>
+                    </div>
+                </a></li>
+                <li>
+                    <div class="side-menu--options">
+                        <div class="side-menu--down">
+                            <button id="toggle-mode"></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+ 
+    <!-- ---------- ---------- ACCOUNT ---------- ---------- -->
+    <main class="account">
+       <div class="account__container">
+            <div class="account__container--item container__item--1">
+                <img src="../imgs/img-usuario/image.png" alt="">
+                <div>
+                    <h3>Derek</h3>
+                    <p>@UserID</p>
+                </div>
+            </div>
+            <div class="account__container--item container__item--2">
+                <div>
+                    <a href="">Editar mi información</a>
+                </div>
+            </div>
+       </div>
+
+        <nav id="account-nav" class="account-nav">
+            <ul class="account-nav__container">
+                <li class="account-nav__container--item account-nav1"><a href="#" data-page="options/informacion.html">Información</a></li>
+                <li class="account-nav__container--item account-nav2"><a href="#" data-page="options/compras.html">Compras</a></li>
+                <li class="account-nav__container--item account-nav3"><a href="#" data-page="options/ventas.html">Ventas</a></li>
+                <li class="account-nav__container--item account-nav4"><a href="#" data-page="options/finanzas-y-wallet.html">Finanzas y Wallet</a></li>
+                <li class="account-nav__container--item account-nav5"><a href="#" data-page="options/seguridad.html">Seguridad</a></li>
+            </ul>
+        </nav>
+
+       <div id="content-container">
+
+       </div>
+    </main>
+
+    <!-- ---------- ---------- FOOTER ---------- ---------- -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p>DAKARIE | &copy;Copyright 2026-2029</p>
+        </div>
+    </footer>
+
+    <script src="../js/menu.js" defer></script>   
+    <script src="../js/modo.js" defer></script> 
+    <script src="options/js/script.js" defer></script> 
+    <div id="overlay" class="overlay" aria-hidden="true"></div>
+</body>
+</html>

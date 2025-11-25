@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia Sesion o Registrate | Dakarie Marketplace</title>
+    <link rel="stylesheet" href="styles/signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        // Comprobamos la preferencia inmediatamente antes de que cargue la página visualmente
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark-mode");
+        }
+    </script> 
+    <!--iframe src="menu_messages.html"></iframe-->
+    <!-- ---------- ---------- HEADER ---------- ---------- -->
+    <header class="header">
+        <!-- ---------- ---------- NAVBAR ---------- ---------- -->
+        <nav class="nav__var">
+            <ul class="nav__var--container">
+                <div class="card item0">
+                    <h1>DAKARIE</h1>
+                </div>
+                <ol class="nav__var--item item1">
+                    <a href="index.html">Home</a>
+                </ol>
+                <ol class="nav__var--item item2">
+                    <a href="categorias.html">Categorias</a>
+                </ol>
+                <ol class="nav__var--item item3">
+                    <a href="tiendas.html">
+                        Tiendas
+                    </a>
+                </ol>
+                <ol class="nav__var--item item4">
+                    <a href="ofertas.html">Ofertas</a>
+                </ol>
+                <ol class="nav__var--item item5">
+                    <button></button>
+                </ol>
+                <ol class="nav__var--item item6">
+                    <button></button>
+                </ol>
+                <ol class="nav__var--item item7">
+                    <div>
+                        <button id="hamburgerBtn" class="hamburger">☰</button>
+                    </div>
+                </ol>
+            </ul>
+        </nav>
+
+        <!-- ---------- ---------- SIDEMENU ---------- ---------- -->
+        <div id="sideMenu" class="side-menu">
+            
+            <ul>
+                <div class="side-menu--container">
+                    <div class="divUsuario"> </div>
+                    <div class="side-menu--element">
+                        <p class="side-menu--item1">User Name</p>
+                        <p class="side-menu--item2">@UserID</p>
+                        <button>Cerrar Sesion</button>
+                    </div>
+                </div>
+                <li><a href="index.html">
+                    <div class="side-menu--options options1">
+                        <p>Home</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div1">
+                        </div>
+                        <p>Mi Cuenta</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div2"> </div>
+                        <p>Billetera</p>
+                    </div>
+                </a></li>
+                <hr>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div3"> </div>
+                        <p>Mensajes</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div4"> </div>
+                        <p>Carrito</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div5"> </div>
+                        <p>Categorias</p>
+                    </div>
+                </a></li>
+                <li><a href="tiendas.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div6"> </div>
+                        <p>Tiendas</p>
+                    </div>
+                </a></li>
+                <li><a href="ofertas.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div7"> </div>
+                        <p>Ofertas</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div8"> </div>
+                        <p>Favoritos</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div9"> </div>
+                        <p>Soporte</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div10"> </div>
+                        <p>Membresias</p>
+                    </div>
+                </a></li>
+                <li>
+                    <div class="side-menu--options">
+                        <div class="side-menu--down">
+                            <button id="toggle-mode"></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!--LOGIN-->
+    <main class="login">
+        <div class="login__container">
+            <div class="login__container--item login1">
+                <h2>DAKARIE</h2>
+                <p><span>El Marketplace automatizado</span> diseñado para conectar Proveedores/Ofertantes con Clientes/Demandantes, sin importar su tamaño o alcance.</p>
+                <p>Tanto negocios como consumidores utilizan Dakarie para encontrar productos, servicios y soluciones de forma rápida, eficiente y segura.</p>
+            </div>
+            <form class="login__container--item login2" id="signupForm">
+                <h3>Registrarse</h3>
+                <label for="nombre">Nombre
+                    <input type="text" id="nombre" placeholder="John Doe">
+                </label>
+                <label for="nombreDeUsuario">Nombre de Usuario
+                    <input type="text" id="nombreDeUsuario" placeholder="@NombreUsuario">
+                </label>
+                <label for="email">Email
+                    <input type="email" id="emailRegistro" placeholder="example@gmail.com">
+                </label>
+                <label for="email">Contraseña
+                    <input type="password" id="passwordRegistro" placeholder="Password">
+                </label>
+                <button class="btnLogin" id="btnLogin">Registrarse</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/signup.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+/* CAMBIAR MODO OSCURO/CLARO*/
+/*config button*/
+.side-menu--down {
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    position: relative;
+    background-color: #bbb;
+}
+
+#toggle-mode{
+    padding: 20px;
+    background-color: #333; /*#8F00FF*/
+    border-radius: 50%;
+    border: none;
+    background-image: url(../modo/dark.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+    position: absolute;
+    left: 0;
+    transition: left .2s;
+}
+
+.sectionOne__containerTwo--element
+
+#toggle-mode:hover{
+    transform: scale(1.05);
+}
+#toggle-mode:active{
+    transform: scale(0.85);
+}
+
+body.dark-mode #toggle-mode{
+    background-image: url(../modo/light.png);
+    left: 60px;
+}
+body.dark-mode .side-menu--down {
+    background-color: #444;
+}
+
+/*config darkmode body*/
+body.dark-mode {background-color: #1b1b1f;}
+
+/*config darkmode navbar*/
+body.dark-mode h1 {color: #fff;}
+
+body.dark-mode .card:is(:hover, :active)::before {background-image: linear-gradient(180deg,#eee,#48e);}
+
+body.dark-mode .card::after {background-color: #1b1b1f;}
+
+body.dark-mode .nav__var--item a {color: #ccc;}
+
+body.dark-mode .nav__var--item a::after {background-color: #aaa;}
+
+body.dark-mode .nav__var--item a:hover {color: #fff;}
+
+body.dark-mode .item3 a {background-color: #33335f;}
+
+body.dark-mode .item1 a, body.dark-mode .item2 a, body.dark-mode .item3 a,body.dark-mode .item4 a {background-color: #33333f;transition: background-color .8s;}
+
+body.dark-mode .item1s a, body.dark-mode .item2s a, body.dark-mode .item3s a,body.dark-mode .item4s a {background-color: #33333f;transition: background-color .8s;}
+
+body.dark-mode .item1H a, body.dark-mode .item2H a, body.dark-mode .item3H a,body.dark-mode .item4H a {background-color: #33333f;transition: background-color .8s;}
+
+body.dark-mode .item1O a, body.dark-mode .item2O a, body.dark-mode .item3O a,body.dark-mode .item4O a {background-color: #33333f;transition: background-color .8s;}
+
+body.dark-mode .item1 a:hover, body.dark-mode .item2 a:hover, body.dark-mode .item3 a:hover,body.dark-mode .item4 a:hover {
+    background-color: #44444c;
+} 
+
+body.dark-mode .main__container {
+    background-color: #222228;
+}
+
+body.dark-mode .item3s a {
+    background-color: #15b5;
+}
+
+body.dark-mode .item3s a:hover{
+    background-color: #15b8;
+}
+
+body.dark-mode .item2 a {
+    background-color: #15b5;
+}
+
+body.dark-mode .item2 a:hover{
+    background-color: #15b8;
+}
+
+body.dark-mode .item4O a {
+    background-color: #15b5;
+}
+
+body.dark-mode .item4O a:hover{
+    background-color: #15b8;
+}
+
+body.dark-mode .item1H a {
+    background-color: #15b5;
+}
+
+body.dark-mode .item1H a:hover{
+    background-color: #15b8;
+}
+
+body.dark-mode .item5 button {background-image: url(../modo/icons-darkmode/campana.png);background-color: #1b1b1b;}
+
+body.dark-mode .item6 button {background-image: url(../modo/icons-darkmode/carrito.png);background-color: #1b1b1b;}
+
+/*config darkmode sidemenu*/
+body.dark-mode .item7 .hamburger{
+    color: #eee;
+}
+
+body.dark-mode .side-menu {
+  background-color:  #222;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .side-menu--options .div1 {background-image: url(../modo/icons-darkmode/people.png);}
+body.dark-mode .side-menu--options .div2 {background-image: url(../modo/icons-darkmode/wallet.png);}
+body.dark-mode .side-menu--options .div3 {background-image: url(../modo/icons-darkmode/messages.png);}
+body.dark-mode .side-menu--options .div4 {background-image: url(../modo/icons-darkmode/carrito.png);}
+body.dark-mode .side-menu--options .div5 {background-image: url(../modo/icons-darkmode/categories.png);}
+body.dark-mode .side-menu--options .div6 {background-image: url(../modo/icons-darkmode/store.png);}
+body.dark-mode .side-menu--options .div7 {background-image: url(../modo/icons-darkmode/offers.png);}
+body.dark-mode .side-menu--options .div8 {background-image: url(../modo/icons-darkmode/favorites.png);}
+body.dark-mode .side-menu--options .div9 {background-image: url(../modo/icons-darkmode/support.png);}
+body.dark-mode .side-menu--options .div10 {background-image: url(../modo/icons-darkmode/memberships.png);}
+
+body.dark-mode .side-menu ul li a {color: #bbb;}
+
+body.dark-mode .side-menu--options:hover {text-shadow: 0px 5px 20px #444;}
+
+body.dark-mode .side-menu--element button {
+    border: 1px solid #555;
+    background-color: #444;
+    color: #eee;
+}
+
+body.dark-mode .side-menu--item1 {color: #eee;}
+body.dark-mode .side-menu--item2 {color: #999;}
+
+body.dark-mode .side-menu--element button:hover{background-color: #555;}
+
+/*home*/
+body.dark-mode .sectionO__container select {
+    border: 1px solid #333;
+    background-image: url(../modo/icons-darkmode/flechaabajo.png);
+    color: #eee;
+    background-color: #33333f;
+}
+
+body.dark-mode .sectionI__container a {background: linear-gradient(to left,#333339, #3335);color: #999;}
+
+body.dark-mode .product-title {color: #eee;}
+body.dark-mode .products-title {color: #eee;}
+body.dark-mode .products-slider-wrapper {scrollbar-color: #555 #222;}
+body.dark-mode .products-slider-wrapper::-webkit-scrollbar-track {background: #333;}
+body.dark-mode .products-slider-wrapper::-webkit-scrollbar-thumb {background-color: #aaa;}
+
+body.dark-mode .product-card {background: linear-gradient(#33333f, #3335);box-shadow: 0 15px 15px rgba(19, 18, 18, 0.05);}
+body.dark-mode .stock-info, body.dark-mode .warranty-info, body.dark-mode .days-info {color: #eee;}
+
+body.dark-mode .product-price {color: #eee;}
+
+body.dark-mode .original-price-text {color: #777;}
+body.dark-mode .badge-sale {color: #eee;}
+
+body.dark-mode .scroll-indicator-track {background-color: #111;}
+
+body.dark-mode .view-all-button-bottom {
+    background-color: #2221;
+    color: #aaa;
+    border: 1px solid #555;
+}
+
+body.dark-mode .sectionC__a {
+    color: #eee;
+    background-color: #1116;
+    border: 1px solid #888;
+}
+
+body.dark-mode .sectionC__container a {
+    background-color: #33333f;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #eee;
+    transition: transform .2s;
+}
+
+/*config darkmode sectionOne*/
+body.dark-mode .sectionOne__containerOne--element1 {color: #eee;}
+
+body.dark-mode .sectionOne__containerOne--element1 p {color: #999;}
+
+body.dark-mode .sectionOne__containerOne--search {background-color: #29292f;}
+
+body.dark-mode .sectionOne__containerTwo--element {background-image: url(../modo/icons-darkmode/catalogo.png); background-color: #000005;}
+body.dark-mode .sectionOne__containerTwo--elementOferts {background-image: url(../modo/icons-darkmode/catalogo-ofertas.png);}
+body.dark-mode .sectionOne__containerTwo--elementHome {background-image: url(../icons/banner-p.png);}
+
+body.dark-mode .options1 {
+    background-color: #444;
+    color: #eee;
+}
+
+body.dark-mode .sectionOne__containerOne--search {
+    background-image: url(../imgs/modo/icons-darkmode/lupa.png);
+}
+
+body.dark-mode .sectionOne__containerTwo--element .divNotFount {
+    background-image: url(../imgs/modo/icons-darkmode/image-not-fount2.png);
+    filter: drop-shadow(4px 4px 8px #222);
+}
+
+body.dark-mode .sectionOne__containerOne--search {border: .5px solid #36c;}
+body.dark-mode .sectionOne__containerOne--search:focus {border:none;outline: .5px solid rgb(14, 22, 34);}
+
+/*config darkmode main*/
+body.dark-mode .main__container--item {
+    box-shadow: 0px 2px 12px #111;
+    background-color: #222227;
+    color: #ccc;
+}
+
+/*config darkmode sectionTwo*/
+body.dark-mode .itemT2 {color: #ccc;}
+
+body.dark-mode .itemT1 a{
+    color: #aaa;
+    background-color: #33333f;
+}
+body.dark-mode .itemT1 a:hover{background-color: #33334f;}
+
+/*config darkmode footer*/
+body.dark-mode .footer__container {
+    box-shadow: 0px 2px 12px #111;
+    background-color: #24242c;
+    color: #aaa;
+}
+
+/*store tiendas*/
+body.dark-mode .sectionTwos__container h2{color: #eee;}
+body.dark-mode .main__container--element1 h3{color: #999;}
+
+body.dark-mode .main__container--elementA a {
+    color: #eee;
+    background-color: #22222f;
+}
+
+body.dark-mode .main__container--store img:hover {box-shadow: 0px 5px 15px #111;}
+
+/*ofertas*/
+
+body.dark-mode .mainofferts__options div input {
+    background-color: #222;
+    border: 1px solid #333;
+    color: #ccc;
+}
+
+body.dark-mode .mainofferts__options select {
+    background-color: #222;
+    border: 1px solid #333;
+    color: #ccc;
+    background-image: url(../imgs/modo/icons-darkmode/flechaabajo.png);
+}
+
+body.dark-mode .container__element1--filtros a {color: #888;}
+body.dark-mode .container__element1--filtros h4 {color: #ccc;}
+body.dark-mode .container__element1--recomendados h4 {color: #ccc;}
+
+body.dark-mode .mainofferts__container {
+    background-color: #111;
+}
+
+body.dark-mode .mainofferts__container--element1 {background-color: #1b1b1f;}
+
+body.dark-mode .mainofferts__container--element2 {background-color: #1b1b1f;}
+
+body.dark-mode .element2__item--container {background-color: #232329;}
+
+body.dark-mode .element2__item--div button {
+    background-color: #232329;
+    background-image: url(../imgs/modo/icons-darkmode/favorites.png);
+}
+
+body.dark-mode .div__button button {
+    background-image: url(../imgs/modo/icons-darkmode/carrito.png) !important;
+}
+
+body.dark-mode .container__element1--recomendados div img {
+    background-color: #33333334;
+}
+
+body.dark-mode .element2__item--div h6 {color: #eee;}
+body.dark-mode .element2__item--div p {color: #999;}
+
+body.dark-mode .sectionFour__containerOne div h2 {color: #eee;}
+
+body.dark-mode  .sectionOne__containerOne--search {
+    background-image: url(../modo/icons-darkmode/lupa.png);
+}
+
+body.dark-mode  .mainofferts__options div input {
+    background-image: url(../modo/icons-darkmode/lupa.png);
+}
+
+body.dark-mode .mainofferts__options select {
+    background-image: url(../modo/icons-darkmode/flechaabajo.png);
+}
+
+body.dark-mode  .product-card .bookmark-btn {
+    background-image: url('../modo/icons-darkmode/favorites.png');
+    background-color: transparent;
+}
+body.dark-mode .product-card .cart-btn {
+    background-image: url('../modo/icons-darkmode/carrito2.png');
+    background-color: transparent;
+}

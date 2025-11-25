@@ -1,0 +1,10 @@
+.page-content__container--element1{
+    width: 100%;
+}
+.container__element1--item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.container__element1--item .fw__seguridad--p {font-weight: 600;}

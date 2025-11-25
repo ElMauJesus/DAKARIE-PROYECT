@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias | Dakarie Marketplace</title>
+    <link rel="stylesheet" href="styles/ofertas.css">
+    <link rel="stylesheet" href="styles/modo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        // Comprobamos la preferencia inmediatamente antes de que cargue la página visualmente
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
+    <!-- ---------- ---------- HEADER ---------- ---------- -->
+    <header class="header">
+        <!-- ---------- ---------- NAVBAR ---------- ---------- -->
+        <nav class="nav__var">
+            <ul class="nav__var--container">
+                <div class="card item0">
+                    <h1>DAKARIE</h1>
+                </div>
+                <ol class="nav__var--item item1O">
+                    <a href="index.html">Home</a>
+                </ol>
+                <ol class="nav__var--item item2O">
+                    <a href="categorias.html">Categorias</a>
+                </ol>
+                <ol class="nav__var--item item3O">
+                    <a href="tiendas.html">
+                        Tiendas
+                    </a>
+                </ol>
+                <ol class="nav__var--item item4O">
+                    <a href="#">Ofertas</a>
+                </ol>
+                <ol class="nav__var--item item5">
+                    <button></button>
+                </ol>
+                <ol class="nav__var--item item6">
+                    <button></button>
+                </ol>
+                <ol class="nav__var--item item7">
+                    <div>
+                        <button id="hamburgerBtn" class="hamburger">☰</button>
+                    </div>
+                </ol>
+            </ul>
+        </nav>
+
+        <!-- ---------- ---------- SIDEMENU ---------- ---------- -->
+        <div id="sideMenu" class="side-menu">
+            
+            <ul>
+                <div class="side-menu--container">
+                    <div class="divUsuario"> </div>
+                    <div class="side-menu--element">
+                        <p class="side-menu--item1">User Name</p>
+                        <p class="side-menu--item2">@UserID</p>
+                        <button>Cerrar Sesion</button>
+                    </div>
+                </div>
+                <li><a href="index.html">
+                    <div class="side-menu--options options1">
+                        <p>Home</p>
+                    </div>
+                </a></li> 
+                <li><a href="usuario-options/usuario.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div1">
+                        </div>
+                        <p>Mi Cuenta</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div2"> </div>
+                        <p>Billetera</p>
+                    </div>
+                </a></li>
+                <hr>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div3"> </div>
+                        <p>Mensajes</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div4"> </div>
+                        <p>Carrito</p>
+                    </div>
+                </a></li>
+                <li><a href="categorias.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div5"> </div>
+                        <p>Categorias</p>
+                    </div>
+                </a></li>
+                <li><a href="tiendas.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div6"> </div>
+                        <p>Tiendas</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div7"> </div>
+                        <p>Ofertas</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div8"> </div>
+                        <p>Favoritos</p>
+                    </div>
+                </a></li>
+                <li><a href="soporte.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div9"> </div>
+                        <p>Soporte</p>
+                    </div>
+                </a></li>
+                <li><a href="memberships.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div10"> </div>
+                        <p>Membresias</p>
+                    </div>
+                </a></li>
+                <li>
+                    <div class="side-menu--options">
+                        <div class="side-menu--down">
+                            <button id="toggle-mode"></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ---------- ---------- SECTIONONE ---------- ---------- -->
+    <section class="sectionOne">
+        <div class="sectionOne__containerOne">
+            <div class="sectionOne__containerOne--element1">
+                <p>Todo lo que necesitas</p>
+                <h2>EN UN SOLO LUGAR</h2>
+            </div>
+            <div class="sectionOne__containerOne--element2">
+                <label for="search">
+                    <div class="divLupa"> </div>
+                    <input class="sectionOne__containerOne--search" type="search" id="search" placeholder="Buscar">
+                </label>
+            </div>
+        </div>
+        <div class="sectionOne__containerTwo fade-in">
+            <div class="sectionOne__containerTwo--element sectionOne__containerTwo--elementOferts">
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ----- - MAINOFFERTS - ----- -->
+    <main class="mainofferts">
+        <!-----Contenedor principal----->
+        <div class="mainofferts__contain">
+            <!-----Barra-de-opciones----->
+            <div class="mainofferts__options">
+                <div>
+                    <input placeholder="Buscar" type="search">
+                </div>
+                
+                <select name="" id="">
+                    <option value="">Categoria</option>
+                    <option value="">Categoria</option>
+                    <option value="">Categoria</option>
+                    <option value="">Categoria</option>
+                </select>
+                <select name="" id="">
+                    <option value="">Popularidad</option>
+                    <option value="">Popularidad</option>
+                    <option value="">Popularidad</option>
+                    <option value="">Popularidad</option>
+                </select>
+                <select name="" id="">
+                    <option value="">Fecha</option>
+                    <option value="">Fecha</option>
+                    <option value="">Fecha</option>
+                    <option value="">Fecha</option>
+                </select>
+                <select name="" id="">
+                    <option value="">Destacados</option>
+                    <option value="">Destacados</option>
+                    <option value="">Destacados</option>
+                    <option value="">Destacados</option>
+                </select>
+            </div>
+
+            <!-----Sub-ContenedorP----->
+            <div class="mainofferts__container">
+                <!-----Barra lateral----->
+                <div class="mainofferts__container--element1">
+                    <div class="container__element1--filtros">
+                        <h4>Filtros</h4>
+                        <a href="">filtro 1 (56 resultados)</a>
+                        <a href="">filtro 2 (56 resultados)</a>
+                        <a href="">filtro 3 (56 resultados)</a>
+                        <a href="">filtro 4 (56 resultados)</a>
+                        <a href="">filtro 5 (56 resultados)</a>
+                        <a href="">filtro 6 (56 resultados)</a>
+                        <a href="">filtro 7 (56 resultados)</a>
+                        <a href="">filtro 8 (56 resultados)</a>
+                    </div>
+                    <div class="container__element1--recomendados">
+                        <h4>Recomendados</h4>
+                        <div>
+                            <img src="imgs/offerts/recomendados/image1.png" alt="">
+                        </div>
+                        <div>
+                            <img src="imgs/offerts/recomendados/image2.png" alt="">
+                        </div>
+                        <div>
+                            <img src="imgs/offerts/recomendados/image3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-----Barra Principal: contenedor dinámico de productos ----->
+                <div id="offersGrid" class="mainofferts__container--element2">
+                    <!-- Aquí se inyectarán las tarjetas de producto desde JS -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ---------- ---------- SECTIONTWO ---------- ---------- -->
+    <section class="sectionTwo">
+       <div class="sectionTwo__container">
+           <div class="sectionTwo__container--item itemT1">
+               <a href="#">16 resultados de 662</a>
+           </div>
+           <div class="sectionTwo__container--item itemT2">
+               <p>Siguiente pagina</p>
+               <a href="#">></a>
+           </div>
+       </div>
+    </section>
+
+    <!-- ---------- ---------- SECTIONFOUR ---------- ---------- -->
+    <section class="sectionFour">
+        <div class="sectionFour__containerOne">
+            <div>
+                <h2>Tiendas Oficiales</h2>
+            </div>
+            <p>Mejores ofertas</p>
+        </div>
+        <div class="sectionFour__containerTwo">
+            <img src="imgs/offerts/tiendas/image1.png" alt="">
+            <img src="imgs/offerts/tiendas/image2.png" alt="">
+            <img src="imgs/offerts/tiendas/image3.png" alt="">
+        </div>
+    </section>
+
+    <!-- ---------- ---------- FOOTER ---------- ---------- -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p>DAKARIE | &copy;Copyright 2026-2029</p>
+        </div>
+    </footer>
+
+    
+    <script src="js/menu.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/modo.js"></script>
+    <div id="overlay" class="overlay" aria-hidden="true"></div>
+
+    <script> 
+    // Generar tarjetas de producto en la página de ofertas imitando la estructura del home
+    document.addEventListener('DOMContentLoaded', function(){ 
+        const offersGrid = document.getElementById('offersGrid');
+        if(!offersGrid) return;
+
+        const template = document.createElement('template');
+        template.innerHTML = `
+        <div class="product-card">
+            <div class="card-top-badges"> 
+                <img src="icons/mas-vendido.png" alt="" class="badge-icon">
+            </div>
+            <div class="card-image-container"><img src="" alt="" class="product-image"></div>
+            <div class="card-details">
+                <div class="title-row">
+                    <p class="product-title"></p>
+                    <span class="stars"></span>
+                    <button class="bookmark-btn" aria-label="Guardar"></button>
+                </div>
+                <div class="product-info-row"><span class="stock-info"></span><span class="product-price"></span></div>
+                <div class="original-price"><span class="original-price-text"></span></div>
+                <div class="product-info-row small-text">
+                    <span class="warranty-info"></span>
+                    <span class="days-info"></span>
+                    <button class="cart-btn" aria-label="Añadir al carrito"></button>
+                </div>
+            </div>
+        </div>`;
+
+        // Usar las 16 imágenes existentes
+        const data = [
+            {img:'imgs/offerts/main/image1.png', title:'Producto 1', stars:4, price:'18.50$', stock:'Existencia: 17', orig:'19.99$', warranty:'7 Años', days:'26 - 30 Días'},
+            {img:'imgs/offerts/main/image2.png', title:'Producto 2', stars:5, price:'12.00$', stock:'Existencia: 8', orig:'15.00$', warranty:'1 Año', days:'5 - 8 Días'},
+            {img:'imgs/offerts/main/image3.png', title:'Producto 3', stars:3, price:'9.99$', stock:'Existencia: 25', orig:'12.99$', warranty:'2 Años', days:'10 - 15 Días'},
+            {img:'imgs/offerts/main/image4.png', title:'Producto 4', stars:4, price:'5.99$', stock:'Existencia: 40', orig:'7.99$', warranty:'6 Meses', days:'2 - 4 Días'},
+            {img:'imgs/offerts/main/image5.png', title:'Producto 5', stars:2, price:'3.99$', stock:'Existencia: 12', orig:'4.99$', warranty:'Sin garantía', days:'7 - 10 Días'},
+            {img:'imgs/offerts/main/image6.png', title:'Producto 6', stars:5, price:'25.00$', stock:'Existencia: 5', orig:'29.99$', warranty:'3 Años', days:'3 - 6 Días'},
+            {img:'imgs/offerts/main/image7.png', title:'Producto 7', stars:4, price:'14.50$', stock:'Existencia: 10', orig:'16.99$', warranty:'1 Año', days:'10 - 12 Días'},
+            {img:'imgs/offerts/main/image8.png', title:'Producto 8', stars:3, price:'7.99$', stock:'Existencia: 22', orig:'9.99$', warranty:'6 Meses', days:'4 - 6 Días'},
+            {img:'imgs/offerts/main/image9.png', title:'Producto 9', stars:5, price:'49.99$', stock:'Existencia: 6', orig:'59.99$', warranty:'2 Años', days:'8 - 12 Días'},
+            {img:'imgs/offerts/main/image10.png', title:'Producto 10', stars:4, price:'29.99$', stock:'Existencia: 14', orig:'34.99$', warranty:'1 Año', days:'5 - 9 Días'},
+            {img:'imgs/offerts/main/image11.png', title:'Producto 11', stars:3, price:'11.99$', stock:'Existencia: 30', orig:'13.99$', warranty:'Sin garantía', days:'3 - 5 Días'},
+            {img:'imgs/offerts/main/image12.png', title:'Producto 12', stars:4, price:'22.00$', stock:'Existencia: 9', orig:'24.99$', warranty:'2 Años', days:'6 - 9 Días'},
+            {img:'imgs/offerts/main/image13.png', title:'Producto 13', stars:2, price:'4.50$', stock:'Existencia: 50', orig:'5.99$', warranty:'Sin garantía', days:'2 - 4 Días'},
+            {img:'imgs/offerts/main/image14.png', title:'Producto 14', stars:5, price:'75.00$', stock:'Existencia: 3', orig:'89.99$', warranty:'3 Años', days:'10 - 15 Días', badge:'Oferta'},
+            {img:'imgs/offerts/main/image15.png', title:'Producto 15', stars:4, price:'39.99$', stock:'Existencia: 11', orig:'44.99$', warranty:'1 Año', days:'6 - 8 Días'},
+            {img:'imgs/offerts/main/image16.png', title:'Producto 16', stars:5, price:'99.99$', stock:'Existencia: 2', orig:'129.99$', warranty:'5 Años', days:'15 - 20 Días'}
+        ];
+
+        function makeStars(n){
+            let html = '';
+            for(let i=0;i<5;i++){
+                html += `<img src="icons/estrella.png" alt="Estrella" class="star-icon">`;
+            }
+            return html;
+        }
+
+        data.forEach((item, idx) => {
+            const node = template.content.cloneNode(true);
+            const img = node.querySelector('.product-image'); if(img){ img.src = item.img; img.alt = item.title; }
+            const title = node.querySelector('.product-title'); if(title) title.textContent = item.title;
+            const stars = node.querySelector('.stars'); if(stars) stars.innerHTML = makeStars(item.stars);
+            const price = node.querySelector('.product-price'); if(price) price.textContent = item.price;
+            const stock = node.querySelector('.stock-info'); if(stock) stock.textContent = item.stock;
+            const orig = node.querySelector('.original-price-text'); if(orig) orig.textContent = item.orig || '';
+            const warranty = node.querySelector('.warranty-info');
+            if(warranty){
+                const w = item.warranty || '';
+                warranty.textContent = w ? (w.toLowerCase().includes('garantia') ? w : `${w} de garantia`) : '';
+            }
+            const days = node.querySelector('.days-info');
+            if(days){
+                // normalize days text but keep original formatting if present
+                days.textContent = item.days || '';
+            }
+            const badgeText = node.querySelector('.badge-text'); if(badgeText) badgeText.textContent = item.badge || '';
+            // append product card
+            offersGrid.appendChild(node);
+        });
+
+        // Delegated event handling: bookmark and cart buttons
+        offersGrid.addEventListener('click', function(e){
+            const bk = e.target.closest('.bookmark-btn');
+            if(bk){
+                bk.classList.toggle('active');
+                // simple visual feedback; you can add persistence here
+                return;
+            }
+            const cart = e.target.closest('.cart-btn');
+            if(cart){
+                // placeholder action: simple feedback
+                cart.classList.add('added');
+                // you can trigger adding to cart logic here
+                console.log('Añadir al carrito:', cart.closest('.product-card')?.querySelector('.product-title')?.textContent);
+                return;
+            }
+        });
+    });
+    </script>
+</body>
+</html> 

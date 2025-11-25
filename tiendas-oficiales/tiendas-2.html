@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias | Dakarie Marketplace</title>
+    <link rel="stylesheet" href="styles/tienda-2.css">
+    <link rel="stylesheet" href="styles/modo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        // Comprobamos la preferencia inmediatamente antes de que cargue la página visualmente
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark-mode");
+        }
+    </script> 
+    <header class="header">
+        <nav class="nav__var">
+            <ul class="nav__var--container">
+                <div class="card item0">
+                    <h1>DAKARIE</h1>
+                </div>
+                <ol class="nav__var--item item1">
+                    <a href="../index.html">Home</a>
+                </ol>
+                <ol class="nav__var--item item2">
+                    <a href="../categorias.html">Categorias</a>
+                </ol>
+                <ol class="nav__var--item item3">
+                    <a href="../tiendas.html">
+                        Tiendas
+                    </a>
+                </ol>
+                <ol class="nav__var--item item4">
+                    <a href="../ofertas.html">Ofertas</a>
+                </ol>
+                <ol class="nav__var--item item5">
+                    <button></button>
+                </ol>
+                <ol class="nav__var--item item6">
+                    <button></button>
+                </ol>
+                <ol class="nav__var--item item7">
+                    <div>
+                        <button id="hamburgerBtn" class="hamburger">☰</button>
+                    </div>
+                </ol>
+            </ul>
+        </nav>
+
+        <div id="sideMenu" class="side-menu">
+            
+            <ul>
+                <div class="side-menu--container">
+                    <div class="divUsuario"> </div>
+                    <div class="side-menu--element">
+                        <p class="side-menu--item1">User Name</p>
+                        <p class="side-menu--item2">@UserID</p>
+                        <button>Cerrar Sesion</button>
+                    </div>
+                </div>
+                <li><a href="../index.html">
+                    <div class="side-menu--options options1">
+                        <p>Home</p>
+                    </div>
+                </a></li>
+                <li><a href="../usuario-options/usuario.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div1">
+                        </div>
+                        <p>Mi Cuenta</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div2"> </div>
+                        <p>Billetera</p>
+                    </div>
+                </a></li>
+                <hr>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div3"> </div>
+                        <p>Mensajes</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div4"> </div>
+                        <p>Carrito</p>
+                    </div>
+                </a></li>
+                <li><a href="../categorias.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div5"> </div>
+                        <p>Categorias</p>
+                    </div>
+                </a></li>
+                <li><a href="../tiendas.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div6"> </div>
+                        <p>Tiendas</p>
+                    </div>
+                </a></li>
+                <li><a href="../ofertas.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div7"> </div>
+                        <p>Ofertas</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div8"> </div>
+                        <p>Favoritos</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div9"> </div>
+                        <p>Soporte</p>
+                    </div>
+                </a></li>
+                <li><a href="../memberships.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div10"> </div>
+                        <p>Membresias</p>
+                    </div>
+                </a></li>
+                <li>
+                    <div class="side-menu--options">
+                        <div class="side-menu--down">
+                            <button id="toggle-mode"></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="sectionOne">
+        <div class="sectionOne__containerOne">
+            <div class="sectionOne__containerOne--element1">
+                <p>Todo lo que necesitas</p>
+                <h1>En un solo lugar</h1>
+            </div>
+            <div class="sectionOne__containerOne--element2">
+                <label for="search">
+                    <div class="divLupa"> </div>
+                    <input class="sectionOne__containerOne--search" type="search" id="search" placeholder="Buscar">
+                </label>
+            </div>
+        </div>
+        <div class="sectionOne__containerTwo fade-in">
+            <div class="sectionOne__containerTwo--element">
+            <h2>Tiendas Oficiales</h2>
+            <p>Tecnologicas</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <div class="main__container">
+            <div class="main__container--item">
+                <div>
+                    <img src="img/tiendas oficiales/onicuma.png" alt="Metalet logo">
+                </div>
+                <div><p>Tienda 1</p></div>
+            </div>
+            <div class="main__container--item">
+                <div>
+                    <img src="img/tiendas oficiales/sony.jpg" alt="">
+                </div>
+                <div><p>Tienda 2</p></div>
+            </div>
+            <div class="main__container--item">
+                <div>
+                    <img src="img/tiendas oficiales/aplee.jpg" alt="">
+                </div>
+                <div><p>Tienda 3</p></div>
+            </div>
+            <div class="main__container--item">
+                <div>
+                    <img src="img/tiendas oficiales/lgl.jpg" alt="">
+                </div>
+                <div><p>Tienda 4</p></div>
+            </div>
+            <div class="main__container--item">
+                <div>
+                    <img src="img/tiendas oficiales/reddragon.png" alt="">
+                </div>
+                <div><p>Tienda 5</p></div>
+            </div>
+            <div class="main__container--item">
+                <div>
+                    <img src="img/tiendas oficiales/xiome.jpg" alt="">
+                </div>
+                <div><p>Tienda 6</p></div>
+            </div>
+            <div class="main__container--item">
+                <div>
+                    <img src="img/tiendas oficiales/samsug.png" alt="">
+                </div>
+                <div><p>Tienda 7</p></div>
+            </div>
+            <div class="main__container--item">
+                <div>
+                    <img src="img/tiendas oficiales/envidia.jpg" alt="">
+                </div>
+                <div><p>Tienda 8</p></div>
+            </div>
+            <div class="main__container--item">
+                <div>
+                    <img src="img/tiendas oficiales/adem.png" alt="">
+                </div>
+                <div><p>Tienda 9</p></div>
+            </div>
+            <div class="main__container--item">
+                <div>
+                    <img src="img/tiendas oficiales/honor.jpg" alt="">
+                </div>
+                <div><p>Tienda 10</p></div>
+            </div>
+            <div class="main__container--item">
+                <div>
+                    <img src="img/tiendas oficiales/huawei.png" alt="">
+                </div>
+                <div><p>Tienda 11</p></div>
+            </div>
+            <div class="main__container--item">
+                <div>
+                    <img src="img/tiendas oficiales/dell.png" alt="">
+                </div>
+                <div><p>Tienda 12</p></div>
+            </div>
+            <div class="main__container--item">
+                <div>
+                    <img src="img/tiendas oficiales/toshiba.jpg" alt="">
+                </div>
+                <div><p>Tienda 13</p></div>
+            </div>
+            <div class="main__container--item">
+                <div>
+                    <img src="img/tiendas oficiales/asus.jpg" alt="">
+                </div>
+                <div><p>Tienda 14</p></div>
+            </div>
+            <div class="main__container--item">
+                <div>
+                    <img src="img/tiendas oficiales/alienware.png" alt="">
+                </div>
+                <div><p>Tienda 15</p></div>
+            </div>
+        </div>
+    </main>
+
+    <section class="sectionTwo">
+       <div class="sectionTwo__container">
+           <div class="sectionTwo__container--item itemT1">
+               <a href="tiendas-oficiales.html">Pagina 3 de 3</a>
+           </div>
+           <div class="sectionTwo__container--item itemT2">
+               <p>Siguiente pagina</p>
+               <a href="#">></a>
+           </div>
+       </div>
+    </section>
+
+<section class="sectionThree">
+    <h2>Sub Categorias</h2>
+    <div class="main__container">
+        <div class="main__container--item">
+            <div class="main__item--container">
+                <img class="main__container--img" src="../icons/pc.png" alt="">
+            </div>
+            <div><p>Tiendas de Computacion</p></div>
+        </div>
+        <div class="main__container--item">
+            <div class="main__item--container">
+                <img class="main__container--img img2" src="../icons/celu.png" alt="">
+            </div>
+            <div><p>Tiendas de Telefonos</p></div>
+        </div>
+        <div class="main__container--item">
+            <div class="main__item--container">
+                <img class="main__container--img" src="../icons/group-4.png" alt="">
+            </div>
+            <div><p>Componentes y utilidades</p></div>
+        </div>
+    </div>
+</section>
+    <footer class="footer">
+        <div class="footer__container">
+            <p>DAKARIE | &copy;Copyright 2026-2029</p>
+        </div>
+    </footer>
+
+    <script src="../js/menu.js" defer></script> 
+    <script src="../js/animations.js" defer></script> 
+    <script src="../js/modo.js" defer></script> 
+    <div id="overlay" class="overlay" aria-hidden="true"></div>
+</body>
+</html>

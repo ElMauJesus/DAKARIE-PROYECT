@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendas | Dakarie Marketplace</title>
+    <link rel="stylesheet" href="styles/tiendas.css">
+    <link rel="stylesheet" href="styles/modo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        // Comprobamos la preferencia inmediatamente antes de que cargue la página visualmente
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
+    <!-- ---------- ---------- HEADER ---------- ---------- -->
+    <header class="header">
+        <!-- ---------- ---------- NAVBAR ---------- ---------- -->
+        <nav class="nav__var">
+            <ul class="nav__var--container">
+                <div class="card item0s">
+                    <h1>DAKARIE</h1>
+                </div>
+                <ol class="nav__var--item item1s">
+                    <a href="index.html">Home</a>
+                </ol>
+                <ol class="nav__var--item item2s">
+                    <a href="categorias.html">Categorias</a>
+                </ol>
+                <ol class="nav__var--item item3s">
+                    <a href="tiendas.html">Tiendas</a>
+                </ol>
+                <ol class="nav__var--item item4s">
+                    <a href="ofertas.html">Ofertas</a>
+                </ol>
+                <ol class="nav__var--item item5">
+                    <button></button>
+                </ol>
+                <ol class="nav__var--item item6">
+                    <button></button>
+                </ol>
+                <ol class="nav__var--item item7">
+                    <div>
+                        <button id="hamburgerBtn" class="hamburger">☰</button>
+                    </div>
+                </ol> 
+            </ul>
+        </nav>
+
+        <!-- ---------- ---------- SIDEMENU ---------- ---------- -->
+        <div id="sideMenu" class="side-menu">
+            
+            <ul>
+                <div class="side-menu--container">
+                    <div class="divUsuario"> </div>
+                    <div class="side-menu--element">
+                        <p class="side-menu--item1">User Name</p>
+                        <p class="side-menu--item2">@UserID</p>
+                        <button>Cerrar Sesion</button>
+                    </div>
+                </div>
+                <li><a href="index.html">
+                    <div class="side-menu--options options1">
+                        <p>Home</p>
+                    </div>
+                </a></li>
+                <li><a href="usuario-options/usuario.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div1">
+                        </div>
+                        <p>Mi Cuenta</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div2"> </div>
+                        <p>Billetera</p>
+                    </div>
+                </a></li>
+                <hr>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div3"> </div>
+                        <p>Mensajes</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div4"> </div>
+                        <p>Carrito</p> 
+                    </div>
+                </a></li>
+                <li><a href="categorias.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div5"> </div>
+                        <p>Categorias</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div6"> </div>
+                        <p>Tiendas</p>
+                    </div>
+                </a></li>
+                <li><a href="ofertas.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div7"> </div>
+                        <p>Ofertas</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div8"> </div>
+                        <p>Favoritos</p>
+                    </div>
+                </a></li>
+                <li><a href="soporte.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div9"> </div>
+                        <p>Soporte</p>
+                    </div>
+                </a></li>
+                <li><a href="memberships.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div10"> </div>
+                        <p>Membresias</p>
+                    </div>
+                </a></li>
+                <li>
+                    <div class="side-menu--options">
+                        <div class="side-menu--down">
+                            <button id="toggle-mode"></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ---------- ---------- SECTIONONE ---------- ---------- -->
+    <section class="sectionOne">
+        <div class="sectionOne__containerOne">
+            <div class="sectionOne__containerOne--element1">
+                <p>Todo lo que necesitas</p>
+                <h2>EN UN SOLO LUGAR</h2>
+            </div>
+            <div class="sectionOne__containerOne--element2">
+                <label for="search">
+                    <div class="divLupa"> </div>
+                    <input class="sectionOne__containerOne--search" type="search" id="search" placeholder="Buscar">
+                </label>
+            </div>
+        </div>
+        <div class="sectionOne__containerTwo">
+            <div class="sectionOne__containerTwo--element">
+
+            </div> 
+        </div>
+    </section>
+
+    <!-- ---------- ---------- SECTIONTWO ---------- ---------- --> 
+    <section class="sectionTwos">
+        <div class="sectionTwos__container">
+            <h2 class="fade-in">Tiendas Oficiales</h2>
+            <div><a href="">Ver todas las tiendas →</a></div>
+        </div>
+    </section>
+
+    
+
+    <!-- ---------- ---------- MAIN ---------- ---------- -->
+    <main class="main">
+       <div class="main__container">
+           <div class="main__container--element1 element1">
+               <h3>Tecnologia</h3>
+           </div>
+           <div class="main__container--element2 animated-group">
+               <div class="main__container--store fade-en"><img src="imgs/store/tecnologia/image1.png" alt=""></div>
+               <div class="main__container--store fade-en"><img src="imgs/store/tecnologia/image2.png" alt=""></div>
+               <div class="main__container--store fade-en"><img src="imgs/store/tecnologia/image3.png" alt=""></div>
+               <div class="main__container--store fade-en"><img src="imgs/store/tecnologia/image4.png" alt=""></div>
+               <div class="main__container--store fade-en"><img src="imgs/store/tecnologia/image5.png" alt=""></div>
+               <div class="main__container--store fade-en"><img src="imgs/store/tecnologia/image6.png" alt=""></div>
+           </div>
+           <div class="main__container--elementA elementA">
+               <a href="#">Explorar Tiendas Disponibles</a>
+           </div>
+       </div>
+
+       <div class="main__container">
+           <div class="main__container--element1 element2">
+               <h3>Productos de Uso Personal</h3>
+           </div>
+           <div class="main__container--element2 animated-group">
+               <div class="main__container--store fade-en"><img src="imgs/store/uso-personal/image1.png" alt=""></div>
+               <div class="main__container--store fade-en"><img src="imgs/store/uso-personal/image2.png" alt=""></div>
+               <div class="main__container--store fade-en"><img src="imgs/store/uso-personal/image3.png" alt=""></div>
+               <div class="main__container--store fade-en"><img src="imgs/store/uso-personal/image4.png" alt=""></div>
+               <div class="main__container--store fade-en"><img src="imgs/store/uso-personal/image5.png" alt=""></div>
+               <div class="main__container--store fade-en"><img src="imgs/store/uso-personal/image6.png" alt=""></div>
+           </div>
+           <div class="main__container--elementA elementA">
+               <a href="#">Explorar Tiendas Disponibles</a>
+           </div>
+       </div>
+
+       <div class="main__container">
+           <div class="main__container--element1 element3">
+               <h3>Prendas de vestir</h3>
+           </div>
+           <div class="main__container--element2 animated-group">
+               <div class="main__container--store fade-en"><img src="imgs/store/prendas/image1.png" alt=""></div>
+               <div class="main__container--store fade-en"><img src="imgs/store/prendas/image2.png" alt=""></div>
+               <div class="main__container--store fade-en"><img src="imgs/store/prendas/image3.png" alt=""></div>
+               <div class="main__container--store fade-en"><img src="imgs/store/prendas/image4.png" alt=""></div>
+               <div class="main__container--store fade-en"><img src="imgs/store/prendas/image5.png" alt=""></div>
+               <div class="main__container--store fade-en"><img src="imgs/store/prendas/image6.png" alt=""></div>
+           </div>
+           <div class="main__container--elementA elementA">
+               <a href="#">Explorar Tiendas Disponibles</a>
+           </div>
+       </div>
+    </main>
+
+    <!-- ---------- ---------- SECTIONTHREE ---------- ---------- -->
+    <section class="sectionTwo">
+       <div class="sectionTwo__container">
+           <div class="sectionTwo__container--item itemT1">
+               <a href="#">Pagina 1 de 3</a>
+           </div>
+           <div class="sectionTwo__container--item itemT2">
+               <p>Siguiente pagina</p>
+               <a href="tiendas-oficiales/tiendas-oficiales.html">></a>
+           </div>
+       </div>
+    </section>
+
+    <!-- ---------- ---------- FOOTER ---------- ---------- -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p>DAKARIE | &copy;Copyright 2026-2029</p>
+        </div>
+    </footer>
+
+    <script src="js/menu.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/modo.js"></script>  
+    <div id="overlay" class="overlay" aria-hidden="true"></div>
+</body>
+</html>

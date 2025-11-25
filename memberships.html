@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias | Dakarie Marketplace</title>
+    <link rel="stylesheet" href="styles/memberships.css">
+    <link rel="stylesheet" href="styles/modo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        // Comprobamos la preferencia inmediatamente antes de que cargue la página visualmente
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark-mode");
+        }
+    </script> 
+    <!--iframe src="menu_messages.html"></iframe-->
+    <!-- ---------- ---------- HEADER ---------- ---------- -->
+    <header class="header">
+        <!-- ---------- ---------- NAVBAR ---------- ---------- -->
+        <nav class="nav__var">
+            <ul class="nav__var--container">
+                <div class="card item0">
+                    <h1>DAKARIE</h1>
+                </div>
+                <ol class="nav__var--item item1">
+                    <a href="index.html">Home</a>
+                </ol>
+                <ol class="nav__var--item item2">
+                    <a href="categorias.html">Categorias</a>
+                </ol>
+                <ol class="nav__var--item item3">
+                    <a href="tiendas.html">
+                        Tiendas
+                    </a>
+                </ol>
+                <ol class="nav__var--item item4">
+                    <a href="ofertas.html">Ofertas</a>
+                </ol>
+                <ol class="nav__var--item item5">
+                    <button></button>
+                </ol>
+                <ol class="nav__var--item item6">
+                    <button></button>
+                </ol>
+                <ol class="nav__var--item item7">
+                    <div>
+                        <button id="hamburgerBtn" class="hamburger">☰</button>
+                    </div>
+                </ol>
+            </ul>
+        </nav>
+
+        <!-- ---------- ---------- SIDEMENU ---------- ---------- --> 
+        <div id="sideMenu" class="side-menu">
+            
+            <ul>
+                <div class="side-menu--container">
+                    <div class="divUsuario"> </div>
+                    <div class="side-menu--element">
+                        <p class="side-menu--item1">User Name</p>
+                        <p class="side-menu--item2">@UserID</p>
+                        <button>Cerrar Sesion</button>
+                    </div>
+                </div>
+                <li><a href="index.html">
+                    <div class="side-menu--options options1">
+                        <p>Home</p>
+                    </div>
+                </a></li>
+                <li><a href="usuario-options/usuario.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div1">
+                        </div>
+                        <p>Mi Cuenta</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div2"> </div>
+                        <p>Billetera</p>
+                    </div>
+                </a></li>
+                <hr>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div3"> </div>
+                        <p>Mensajes</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div4"> </div>
+                        <p>Carrito</p>
+                    </div>
+                </a></li>
+                <li><a href="categorias.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div5"> </div>
+                        <p>Categorias</p>
+                    </div>
+                </a></li>
+                <li><a href="tiendas.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div6"> </div>
+                        <p>Tiendas</p>
+                    </div>
+                </a></li>
+                <li><a href="ofertas.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div7"> </div>
+                        <p>Ofertas</p>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="side-menu--options">
+                        <div class="div--item div8"> </div>
+                        <p>Favoritos</p>
+                    </div>
+                </a></li>
+                <li><a href="soporte.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div9"> </div>
+                        <p>Soporte</p>
+                    </div>
+                </a></li>
+                <li><a href="memberships.html">
+                    <div class="side-menu--options">
+                        <div class="div--item div10"> </div>
+                        <p>Membresias</p>
+                    </div>
+                </a></li>
+                <li>
+                    <div class="side-menu--options">
+                        <div class="side-menu--down">
+                            <button id="toggle-mode"></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="mbs">
+        <div class="mbs__title">
+            <p>Vuelvete Miembro y </p>
+            <p>Distruta de grandes privilegios</p>
+        </div>
+        <!-- ----- Miembro Verificado ----- --> 
+        <div class="mbs__container">
+            <div class="mbs__container--element1 fade-in">
+                <div class="mbs__container--item1">
+                    <img src="imgs/img-memberships/membership1.png" alt="">
+                </div>
+                <div class="mbs__container--item2">
+                    <h3>Miembro Verificado</h3>
+                    <p class="mbs__item1--p fade-in">DAKARIE</p>
+                </div>
+                <div class="mbs__container--item3 fade-in">
+                    <p>Solo por</p>
+                    <p>US$4,99/mes</p>
+                </div>
+            </div>
+
+            <div class="mbs__container--element2">
+                <h3>Obtendras Caracteristicas como</h3>
+                <ul class="mbs__element2--lista mbs__lista1 fade-in">
+                    <li><span>Sello premium de verificacion en tu perfil.</span></li>
+                    <li><span>Más visibilidad en tus busquedas y recomendaciones.</span></li>
+                    <li><span>Acceso prioritario al soporte y asistencia personalizada.</span></li>
+                    <li><span>Ofertas exclusivas y descuentos dentro de la plataforma.</span></li>
+                    <li><span>Herraimentas adicionales para mejorar tu experiencia y destacar entre otros usuarios.</span></li>
+                </ul>
+                <div class="mbs__element2--buttons animated-group">
+                    <button class="fade-en">Convertirme en Empresa</button>
+                    <button class="fade-en">¡Quiero ser parte!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----- Tienda Premium ----- -->
+        <div class="mbs__container">
+            <div class="mbs__container--element1 fade-in">
+                <div class="mbs__container--item1">
+                    <img src="imgs/img-memberships/membership2.png" alt="">
+                </div>
+                <div class="mbs__container--item2">
+                    <h3>Tienda Premium</h3>
+                    <p class="mbs__item2--p fade-in">DAKARIE</p>
+                </div>
+                <div class="mbs__container--item3 fade-in">
+                    <p>Solo por</p>
+                    <p>US$9,99/mes</p>
+                </div>
+            </div>
+
+            <div class="mbs__container--element2">
+                <h3>Obtendras Caracteristicas como</h3>
+                <ul class="mbs__element2--lista mbs__lista2 fade-in">
+                    <li><span>Sello Premium de tienda destacada.</span></li>
+                    <li><span>Publicacion de hasta X productos.</span></li>
+                    <li><span>Acceso prioritario al soporte y asistencia personalizada.</span></li>
+                    <li><span>Ofertas exclusivas y descuentos dentro de la plataforma.</span></li>
+                    <li><span>Herraimentas adicionales para mejorar tu experiencia y destacar entre otros usuarios.</span></li>
+                </ul>
+                <div class="mbs__element2--buttons animated-group">
+                    <button class="fade-en">Convertirme en Empresa</button>
+                    <button class="fade-en">¡Quiero ser parte!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----- Miembro Premium ----- --> 
+        <div class="mbs__container">
+            <div class="mbs__container--element1 fade-in">
+                <div class="mbs__container--item1">
+                    <img src="imgs/img-memberships/premium1.png" alt="">
+                </div>
+                <div class="mbs__container--item2">
+                    <h3>Miembro Premium</h3>
+                    <p class="mbs__item3--p fade-in">DAKARIE</p>
+                </div>
+                <div class="mbs__container--item3 fade-in">
+                    <p>Solo por</p>
+                    <p>US$19,99/mes</p>
+                </div>
+            </div>
+
+            <div class="mbs__container--element2">
+                <h3>Obtendras Caracteristicas como</h3>
+                <ul class="mbs__element2--lista mbs__lista3 fade-in">
+                    <li><span>Sello de confianza:</span> Sello de verificacion que aumenta la credibilidad y las ventas.</li>
+                    <li><span>Aunmento de exposicion:</span> Aparece más frecuentemente y en posiciones superiores del ranking.</li>
+                    <li><span>Mejor control de negocio:</span> Acceso a herramientas para optimizar ventas.</li>
+                    <li><span>Precio accesible:</span> Solo ~1$ por día para aumentar ventas, confianza y soporte.</li>
+                </ul>
+                <div class="mbs__element2--buttons animated-group">
+                    <button class="fade-en">Convertirme en Empresa</button>
+                    <button class="fade-en">¡Quiero ser parte!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----- Premium Advertising ----- -->
+        <div class="mbs__container">
+            <div class="mbs__container--element1 fade-in">
+                <div class="mbs__container--item1">
+                    <img src="imgs/img-memberships/premium2.png" alt="">
+                </div>
+                <div class="mbs__container--item2">
+                    <h3>Premium Advertising</h3>
+                    <p class="mbs__item4--p fade-in">DAKARIE</p>
+                </div>
+                <div class="mbs__container--item3 fade-in">
+                    <p>Solo por</p>
+                    <p>US$19,99/mes</p>
+                </div>
+            </div>
+
+            <div class="mbs__container--element2">
+                <h3>Obtendras Caracteristicas como</h3>
+                <ul class="mbs__element2--lista mbs__lista4 fade-in">
+                    <li><span>Métricas y Resultados:</span> Acceso a un dashboard con datos clave.</li>
+                    <li><span>Visualizaciones • Conversaciones • Clics • Roi estimado</span></li>
+                    <li><span>Paquete de publicidad de otro impacto:</span> Uso de canales publicitarios para una maxima exposición.</li>
+                    <li><span>campañas estacionales:</span> Navidad, Black Friday, etc.</li>
+                    <li><span>Menciones Honorificas:</span> Marca del mes, best seller, etc.</li>
+                </ul>
+                <div class="mbs__element2--buttons animated-group">
+                    <button class="fade-en">Convertirme en Empresa</button>
+                    <button class="fade-en">¡Quiero ser parte!</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ---------- ---------- FOOTER ---------- ---------- -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p>DAKARIE | &copy;Copyright 2026-2029</p>
+        </div>
+    </footer>
+
+    <script src="js/menu.js" defer></script>   
+    <script src="js/animations.js" defer></script> 
+    <script src="js/modo.js" defer></script> 
+    <div id="overlay" class="overlay" aria-hidden="true"></div>
+</body>
+</html>

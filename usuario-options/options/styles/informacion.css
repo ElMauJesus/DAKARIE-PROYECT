@@ -1,0 +1,144 @@
+#content-container {width: 100%;box-sizing: border-box; margin-top: 40px;}
+.page-content {
+    width: 100%;
+}
+
+/* ----- -- ELEMENTO1 -- ----- */
+.page-content__container {
+    width: 100%;
+    justify-items: center;
+}
+
+.page-content__containerAll {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 90%;
+    background-color: #eee;
+    padding: 40px;
+    border-radius: 20px;
+} 
+
+.page-content__container--element1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__element1--item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.container__element1--item div { 
+    width: 50%;
+    line-height: 5px;
+}
+
+.container__element1--item div p {
+    font-size: 16px;
+    font-weight: 460;
+}
+
+.container__element1--item div div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button {
+    height: 25px;
+    width: 100px;
+    border-radius: 20px 12px 30px 20px;
+    border: 1px solid #555;
+}
+
+.container__element1--item2 {
+    line-height: 5px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.container__element1--item2 div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* ----- -- ELEMENTO2 -- ----- */
+.page-content__container--element2{
+    width: 100%;
+    padding: 20px;
+}
+.page-content__container--element2 h3{font-weight: 560;font-size: 18px;}
+.form__container {display: flex;flex-direction: column; gap: 20px;}
+
+.form__container--item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.form__container--label1 {width: 45%;}
+
+.form__container--label1 input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+}
+
+.form__container--item2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form__container--label2 {width: 93%;}
+
+.form__container--label2 input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+}
+
+.form__container--item3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.form__container--label3 {width: 29%;}
+
+.form__container--label3 input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+}
+
+.container--element2--button {
+    width: 10%;
+    margin: 20px;
+    position: relative;
+    left: 85%;
+}
+
+.container--element2--button button{
+    width: 190px;
+    height: 40px;
+    border-radius: 8px 10px 18px 8px;
+}
+
+/*Responsive button*/
+@media screen and (max-width:1330px) {.container--element2--button {left: 75%;}}
+@media screen and (max-width:850px) {
+    .form__container--item3, .form__container--item {flex-wrap: wrap;}
+    .form__container--label3, .form__container--label1 {width: 93%;}
+}
+@media screen and (max-width:800px) {
+    .container--element2--button {left: 65%;}
+    .container__element1--item {flex-wrap: wrap;}
+    .container__element1--item div { width: 100%;}
+}
+@media screen and (max-width:600px) {.container--element2--button {left: 55%;}}
+@media screen and (max-width:490px) {.container--element2--button {left: 45%;}}
